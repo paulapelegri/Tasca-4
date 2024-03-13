@@ -1,0 +1,4 @@
+use MER6;
+select RESERVA.data_reserva, RESERVA.import_total, VOL.num_vol, PASSATGER.nom, PASSATGER.cognom
+from RESERVA, VOL, PASSATGER
+where PASSATGER.ID=RESERVA.PASSATGER_ID AND VOL.ID=RESERVA.VOL_ID AND VOL.data_sortida="2021-07-03"; 
